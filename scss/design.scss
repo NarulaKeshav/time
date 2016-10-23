@@ -71,6 +71,7 @@ body {
         box-shadow: 2px 10px 20px rgba(0,0,0,0.1);
     }
     h1 {
+        @include transition(.3s);
         font: $bold 60px $font;
         #date {
             font: $light 30px $font;

@@ -35,6 +35,10 @@ body {
     font: 400 18px/24px "Roboto Slab";
     box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.1); }
   .quote h1 {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
     font: 700 60px "Montserrat"; }
     .quote h1 #date {
       font: 400 30px "Montserrat";
