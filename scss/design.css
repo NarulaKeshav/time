@@ -126,8 +126,10 @@ body {
 
   .change {
     position: absolute;
-    top: 20px;
-    left: 30%; }
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    padding: 16px 15px; }
 
   .time h1 {
     font-size: 35px; }
