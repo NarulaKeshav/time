@@ -17,15 +17,9 @@ body {
   padding-top: 0%;
   position: relative; }
 
-.time h1 {
-  color: transparent;
-  color: #FFF;
-  text-shadow: 2px 3px 20px rgba(0, 0, 0, 0.2);
-  font: 700 65px "Montserrat"; }
-
-.quote {
+.time {
   margin-top: 10px; }
-  .quote p {
+  .time p {
     background: #FFF;
     display: inline-block;
     padding: 16px 20px;
@@ -34,13 +28,13 @@ body {
     margin: 0;
     font: 400 18px/24px "Roboto Slab";
     box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.1); }
-  .quote h1 {
+  .time h1 {
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
     transition: all 0.3s;
     font: 700 60px "Montserrat"; }
-    .quote h1 #date {
+    .time h1 #date {
       font: 400 30px "Montserrat";
       color: rgba(255, 255, 255, 0.6);
       display: inline-block;
@@ -48,23 +42,29 @@ body {
       position: relative;
       left: -18px;
       top: -10px; }
-    .quote h1 #hour, .quote h1 #min, .quote h1 #sec {
+    .time h1 #hour, .time h1 #min, .time h1 #sec {
       background: rgba(0, 0, 0, 0.2);
       padding: 22px 10px;
       display: inline-block;
       width: 120px;
       color: #FFF;
       border-radius: 100%; }
-    .quote h1 span.blinker {
+    .time h1 span.blinker {
       animation: 1s blink step-end infinite;
       position: relative;
       top: -10px;
       color: rgba(0, 0, 0, 0.2); }
-    .quote h1 #ampm {
+    .time h1 #ampm {
       font-size: 40px;
       position: relative;
       left: 10px;
       color: rgba(0, 0, 0, 0.2); }
+
+.quote h1 {
+  color: transparent;
+  color: #FFF;
+  text-shadow: 2px 3px 20px rgba(0, 0, 0, 0.2);
+  font: 700 65px "Montserrat"; }
 
 .change,
 .change:focus {
@@ -120,5 +120,29 @@ body {
     background: #E74C3C; }
   90% {
     background: #336476; } }
+@media (max-width: 768px) {
+  body {
+    padding-top: 15%; }
+
+  .change {
+    position: absolute;
+    top: 20px;
+    left: 30%; }
+
+  .time h1 {
+    font-size: 35px; }
+    .time h1 #date {
+      position: relative;
+      left: 0px; }
+    .time h1 #hour, .time h1 #min, .time h1 #sec {
+      background: rgba(0, 0, 0, 0.2);
+      padding: 16px 10px;
+      display: inline-block;
+      width: 75px;
+      color: #FFF;
+      border-radius: 100%; }
+
+  .quote h1 {
+    font: 700 38px "Montserrat"; } }
 
 /*# sourceMappingURL=design.css.map */

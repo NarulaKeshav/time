@@ -50,15 +50,6 @@ body {
     position: relative;
 }
 .time {
-    h1 {
-        color: transparent;
-        // -webkit-text-stroke: 3px $primary;
-        color: $white;
-        text-shadow: 2px 3px 20px rgba(0,0,0,0.2);
-        font: $bold 65px $font;
-    }
-}
-.quote {
     margin-top: 10px;
     p {
         background: $white;
@@ -102,6 +93,14 @@ body {
             left: 10px;
             color: rgba(0,0,0,0.2);
         }
+    }
+}
+.quote {
+    h1 {
+        color: transparent;
+        color: $white;
+        text-shadow: 2px 3px 20px rgba(0,0,0,0.2);
+        font: $bold 65px $font;
     }
 }
 .change,
@@ -155,4 +154,37 @@ body {
     70% { background: $light-red; }
     80% { background: $red; }
     90% { background: $teal; }
+}
+
+@media(max-width: 768px) {
+    body {
+        padding-top: 15%;
+    }
+    .change {
+        position: absolute;
+        top: 20px;
+        left: 30%;
+    }
+    .time {
+        h1 {
+            font-size: 35px;
+            #date {
+                position: relative;
+                left: 0px;
+            }
+            #hour, #min, #sec {
+                background: rgba(0,0,0,0.2);
+                padding: 16px 10px;
+                display: inline-block;
+                width: 75px;
+                color: $white;
+                border-radius: 100%;
+            }
+        }
+    }
+    .quote {
+        h1 {
+            font: $bold 38px $font;
+        }
+    }
 }
