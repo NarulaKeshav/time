@@ -4,6 +4,6 @@ Time is what we want most, but what use we use the worst. Time is something that
 A tool for me to be motivated and to make the best of the time that has been given to me. If it could motivate me, I thought it could definitely motivate others.
 
 ## Link and Screenshot
-This is the [link to Time](http://narulakeshav.com/time/) to the application.
+Link to the app: [http://narulakeshav.com/time/](http://narulakeshav.com/time/)
 <br>
 ![Screenshot](./images/screenshot.png)
