@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+    // Array with all the quotes
     var quoteArr = [
         "If you spend too much time thinking about a thing, you'll never get it done.",
         "Don't wait, time will never be just right.",
@@ -42,9 +43,9 @@ $(document).ready(function() {
         "How long is forever? Sometimes, just one second.",
         "Don't give up! Great things take time.",
         "Don't wait! Life goes faster than you think."
-        ]
+        ];
 
-    // Being everything
+    // Begin everything
     init();
 
     // Updates the time every 100 milliseconds
@@ -80,9 +81,9 @@ $(document).ready(function() {
             'SEP', 'OCT', 'NOV', 'DEC'
         ];
         var month = arr[new Date().getMonth()];
-        var date = new Date().getDate().toString();
+        var date = new Date().getDate();
         var year = new Date().getFullYear();
-        $('#date').text(month + " " + date + ", " + year);
+        $('#date').text(month + ' ' + date + ', ' + year);
     }
 
     /**
@@ -92,8 +93,7 @@ $(document).ready(function() {
     function getCurrentHour() {
         var hour = new Date().getHours() % 12;
         if (hour == 0) return '12';
-        else if (hour < 10) return '0' + hour;
-        else return hour;
+        return hour < 10 ? '0' + hour : hour;
     }
 
     /**
@@ -102,8 +102,7 @@ $(document).ready(function() {
      */
     function getCurrentMinutes() {
         var min = new Date().getMinutes();
-        if (min < 10) return '0' + min;
-        else return min;
+        return min < 10 ? '0' + min : min;
     }
 
     /**
@@ -112,8 +111,7 @@ $(document).ready(function() {
      */
     function getCurrentSeconds() {
         var sec = new Date().getSeconds();
-        if (sec < 10) return '0' + sec;
-        else return sec;
+        return sec < 10 ? '0' + sec : sec;
     }
 
     /**
@@ -122,8 +120,7 @@ $(document).ready(function() {
      */
     function amOrPm() {
         var hourIn24 = new Date().getHours();
-        if (hourIn24 > 12) return 'pm';
-        else return 'am';
+        return hourIn24 > 12 ? 'pm' : 'am';
     }
 
     /**
