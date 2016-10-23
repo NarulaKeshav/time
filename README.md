@@ -5,5 +5,5 @@ A tool for me to be motivated and to make the best of the time that has been giv
 
 ## Link and Screenshot
 Link to the app: [http://narulakeshav.com/time/](http://narulakeshav.com/time/)
-<br>
+<br><br>
 ![Screenshot](./images/screenshot.png)
