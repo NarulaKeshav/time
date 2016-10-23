@@ -49,7 +49,9 @@ $(document).ready(function() {
     init();
 
     // Updates the time every 100 milliseconds
+    // Randomizes the quote every minute
     setInterval(showCurrentTime, 100);
+    setInterval(randomize, 60000);
 
     /**
      * Intializes everything
@@ -60,15 +62,29 @@ $(document).ready(function() {
     function init() {
         showCurrentTime();
         showTodayDate();
-        randomizeQuote(quoteArr);
+        randomize();
     }
 
     /**
      * Changes the quote on screen on button click
      */
     $('.change').click(function() {
-        randomizeQuote(quoteArr);
+        randomize();
     });
+
+    /**
+     * Calls the randomize array function
+     * Changes opacity to add cool transition effect
+     */
+    function randomize() {
+        $('#time-quote').animate({
+            opacity: 0.5
+        }, 400);
+        randomizeQuote(quoteArr);
+        $('#time-quote').animate({
+            opacity: 1
+        }, 400);
+    }
 
     /**
      * Gets today's date in MON 00, 0000 format
