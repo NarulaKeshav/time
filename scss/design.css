@@ -1,0 +1,120 @@
+/* Importing Google Font */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:400");
+@import "https://fonts.googleapis.com/css?family=Roboto+Slab:300";
+/* Font Properties */
+/* Mixins */
+/* General CSS Properties */
+body {
+  background: #1ABC9C;
+  animation: rainbow 100s infinite;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  height: 100vh;
+  font-family: "Montserrat";
+  color: #444;
+  padding-top: 0%;
+  position: relative; }
+
+.time h1 {
+  color: transparent;
+  color: #FFF;
+  text-shadow: 2px 3px 20px rgba(0, 0, 0, 0.2);
+  font: 700 65px "Montserrat"; }
+
+.quote {
+  margin-top: 10px; }
+  .quote p {
+    background: #FFF;
+    display: inline-block;
+    padding: 16px 20px;
+    color: #1ABC9C;
+    width: 85%;
+    margin: 0;
+    font: 400 18px/24px "Roboto Slab";
+    box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.1); }
+  .quote h1 {
+    font: 700 60px "Montserrat"; }
+    .quote h1 #date {
+      font: 400 30px "Montserrat";
+      color: rgba(255, 255, 255, 0.6);
+      display: inline-block;
+      padding: 10px 40px;
+      position: relative;
+      left: -18px;
+      top: -10px; }
+    .quote h1 #hour, .quote h1 #min, .quote h1 #sec {
+      background: rgba(0, 0, 0, 0.2);
+      padding: 22px 10px;
+      display: inline-block;
+      width: 120px;
+      color: #FFF;
+      border-radius: 100%; }
+    .quote h1 span.blinker {
+      animation: 1s blink step-end infinite;
+      position: relative;
+      top: -10px;
+      color: rgba(0, 0, 0, 0.2); }
+    .quote h1 #ampm {
+      font-size: 40px;
+      position: relative;
+      left: 10px;
+      color: rgba(0, 0, 0, 0.2); }
+
+.change,
+.change:focus {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  outline: 0;
+  padding: 8px 14px;
+  border: none;
+  color: #FFF; }
+
+.change:hover {
+  background: rgba(255, 255, 255, 0.2); }
+
+@keyframes "blink" {
+  from, to {
+    opacity: 0; }
+  50% {
+    opacity: 1; } }
+@-moz-keyframes blink {
+  from, to {
+    opacity: 0; }
+  50% {
+    opacity: 1; } }
+@-webkit-keyframes "blink" {
+  from, to {
+    opacity: 0; }
+  50% {
+    opacity: 1; } }
+@keyframes rainbow {
+  0%, 100% {
+    background: #1ABC9C; }
+  10% {
+    background: #2ECC71; }
+  20% {
+    background: #4EC2E7; }
+  30% {
+    background: #0084FF; }
+  40% {
+    background: #7277D5; }
+  50% {
+    background: #9B59B6; }
+  60% {
+    background: #CE5194; }
+  70% {
+    background: #ED656F; }
+  80% {
+    background: #E74C3C; }
+  90% {
+    background: #336476; } }
+
+/*# sourceMappingURL=design.css.map */
