@@ -1,0 +1,9 @@
+# Ignore server and node_modules
+/node_modules
+/server.js
+
+# Ignore SASS cache and MAP file
+/scss/.sass-cache
+
+# Local DS_Store file
+/.DS_Store
